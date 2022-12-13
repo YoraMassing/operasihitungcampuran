@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>W3.CSS Template</title>
+    <title>Storya_Learning</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -59,13 +59,14 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#motivasi">Motivasi</a>
-    <a href="#">Sejarah</a>
+    <a href="#sejarah">Sejarah</a>
     <a href="#sifataturan">Sifat dan Aturan</a>
-    <a href="#prima">Faktor Prima</a>
-    <a href="#">Faktorisasi Prima</a>
-    <a href="#">FPB dan KPK</a>
+    <a href="#faktorprima">Faktor Prima</a>
+    <a href="#faktorisasi">Faktorisasi Prima</a>
+    <a href="#fpb">FPB dan KPK</a>
     <a href="#pecahan">Bentuk-Bentuk Pecahan</a>
-    <a href="#">Mengubah Bentuk Pecahan</a>
+    <a href="#mengubahpecahan">Mengubah Bentuk Pecahan</a>
+    <a href="#mengurutkanpecahan">Mengurutkan Nilai Pecahan</a>
     <a href="#operasi">Operasi Hitung Campuran</a>
     <a href="#contact">Contact</a>
   </div>
@@ -128,8 +129,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- Blog entries -->
     <div class="w3-col 20 s12">
     
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <!-- Motivasi -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="motivasi">
         <div class="w3-center">
           <h2>BILANGAN?</h2>
           <h3>Operasi Campuran dan Dunia Nyata</h3>
@@ -158,8 +159,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
   </div>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <!-- Sejarah -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="sejarah">
         <div class="w3-center">
           <h2>Operasi Hitung Campuran Bilangan</h2>
           <h3>Kenapa Bisa Ada?</h3>
@@ -215,8 +216,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
       </div>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <!-- Sifat dan Aturan Operasi Hitung Campuran -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="sifataturan">
         <div class="w3-center">
           <h3>Operasi Hitung Campuran Bilangan</h3>
           <h5>Sifat dan Aturannya</h5>
@@ -264,8 +265,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
 
-    <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+    <!-- Faktor Prima, Faktorisasi Prima, FPB, KPK -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="prima">
         <div class="w3-center">
           <h3>Faktor Prima, Faktorisasi Prima, FPB, dan KPK</h3>
           <h5>Apa hubungannya dengan operasi campuran bilangan?</h5>
@@ -283,7 +284,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             begitu paham akan materi ini agar lebih paham.</p>
           <p><strong>Yuk, check it out!</strong></p>
           
-          <img src="https://pbs.twimg.com/media/FiYIQLGUAAAKJKx?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <img src="https://pbs.twimg.com/media/FiYIQLGUAAAKJKx?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16" id="faktorprima">
           <h5>A. Faktor Prima</h5>
           <p>Faktor-faktor bilangan bulat yang hanya memiliki 2 faktor saja,
             (1 dan bilangan itu sendiri). Contoh :</p>
@@ -294,7 +295,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p style="color:red"><strong>20 = 2 x 2 x 5</strong></p>
           <p>maka faktor prima dari 20 adalah <span style="color:red">2 dan 5</span></p>
 
-          <h5>B. Faktorisasi Prima</h5>
+          <h5 id="faktorisasi">B. Faktorisasi Prima</h5>
           <p>Faktorisasi prima adalah perkalian bilangan-bilangan prima dari suatu bilangan. Contoh :</p>
           <p style="color:red"><strong>10 = 2 x 5</strong></p>
           <p>maka faktorisasi prima dari 10 adalah <span style="color:red">2 x 5</span></p>
@@ -306,7 +307,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <P>Faktor prima dan faktorisasi prima dapat dicari menggunakan dua cara, 
             yaitu menggunakan kotak perkalian dan pohon faktor</p>
 
-          <img src="https://pbs.twimg.com/media/FiYIScZUYAAHJNo?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+          <img src="https://pbs.twimg.com/media/FiYIScZUYAAHJNo?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16" id="fpb">
           <h5>C. Faktor Persekutuan Terbesar (FPB)</h5>
           <p>Faktor Persekutuan Terbesar (FPB) adalah faktor terbesar yang sama 
             dari banyak bilangan yang dimaksud. Banyak bilangan yang dimaksud 
@@ -344,8 +345,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
 
-    <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+    <!-- Bentuk Pecahan -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="pecahan">
         <div class="w3-center">
           <h2>Berbagai Bentuk Pecahan</h2>
           <h3>Ada Apa Aja Sih?</h3>
@@ -410,7 +411,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
 
             <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="mengubahpecahan">
         <div class="w3-center">
           <h3>Mengubah Berbagai Bentuk Pecahan</h3>
           <h5>Pecahan Biasa, Pecahan Campuran, Desimal, Persen</h5>
@@ -481,8 +482,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <!-- Mengurutkan Pecahan -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="mengurutkanpecahan">
         <div class="w3-center">
           <h3>Mengurutkan Pecahan</h3>
           <h5>Berdasarkan Nilainya</h5>
@@ -509,8 +510,8 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
     </div>
 
-      <!-- Blog entry -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <!-- Operasi Hitung Campuran -->
+      <div class="w3-container w3-white w3-margin w3-padding-large" id="operasi">
         <div class="w3-center">
           <h3>Operasi Hitung Campuran</h3>
           <h5>Bilangan Bulat dan Pecahan</h5>
@@ -543,7 +544,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- About/Information menu -->
     <div class="w3-col l4">
       <!-- About Card -->
-      <div class="w3-white w3-margin">
+      <div class="w3-white w3-margin" id="contact">
         <img src="https://www.w3schools.com/w3images/avatar_girl2.jpg" alt="Jane" style="width:100%" class="w3-grayscale">
         <div class="w3-container w3-black">
           <h4>About Me</h4>
@@ -560,12 +561,12 @@ and is wrapped around the whole page content, except for the footer in this exam
           <h4>Follow Me</h4>
         </div>
         <div class="w3-container w3-xlarge w3-padding">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-youtube w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
+          <a href="#" class="fa fa-facebook-official w3-hover-opacity"></a>
+          <a href="#" class="fa fa-instagram w3-hover-opacity"></a>
+          <a href="#" class="fa fa-youtube w3-hover-opacity"></a>
+          <a href="#" class="fa fa-pinterest-p w3-hover-opacity"></a>
+          <a href="#" class="fa fa-twitter w3-hover-opacity"></a>
+          <a href="#" class="fa fa-whatsapp w3-hover-opacity"></a>
         </div>
       </div>
       <hr>
