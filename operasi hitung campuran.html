@@ -11,20 +11,97 @@
     <style>
     h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
     body {font-family: "Open Sans"}
+      
+          .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(27, 28, 69);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      
     </style>
   </head>
 <body class="w3-light-grey">
+  
+  <!--Sidebar-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#motivasi">Motivasi</a>
+    <a href="#">Sejarah</a>
+    <a href="#sifataturan">Sifat dan Aturan</a>
+    <a href="#prima">Faktor Prima</a>
+    <a href="#">Faktorisasi Prima</a>
+    <a href="#">FPB dan KPK</a>
+    <a href="#pecahan">Bentuk-Bentuk Pecahan</a>
+    <a href="#">Mengubah Bentuk Pecahan</a>
+    <a href="#operasi">Operasi Hitung Campuran</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-<!-- Navigation bar with social media icons -->
-<div class="w3-bar w3-black w3-hide-small">
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
-  <a href="https://twitter.com/Storya_Learn" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-whatsapp"></i></a>
-  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-phone"></i></a>
-  <a href="https://www.youtube.com/" class="w3-bar-item w3-button"><i class="fa fa-youtube"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top"></div>
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-wide" onclick="openNav()">STORYA</a>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+
+<!-- Right-sided navbar links -->
+  <div class="w3-right w3-hide-small">
+    <a href="#motivasi" class="w3-bar-item w3-button"> MOTIVASI</a>
+    <a href="#sifataturan" class="w3-bar-item w3-button"> SIFAT DAN ATURAN</a>
+    <a href="#prima" class="w3-bar-item w3-button"> PRIMA</a>
+    <a href="#pecahan" class="w3-bar-item w3-button"> PECAHAN</a>
+    <a href="#operasi" class="w3-bar-item w3-button"> OPERASI CAMPURAN</a>
+    <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
+  </div>
 </div>
+<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
   
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
