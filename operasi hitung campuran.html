@@ -96,10 +96,19 @@
   </div>
 </div>
 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-  
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="openNav()">
+        <i class="fa fa-bars" id="simnav"></i>
       </a>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
     </div>
   </div>
   
@@ -179,8 +188,8 @@ and is wrapped around the whole page content, except for the footer in this exam
             tidak ada yang bisa mengatakan siapa pencipta aturan ini. Belum lagi,
             aturan operasi atau nama kerennya <i>Order of Operation</i> masih terus berkembang
             hingga sekarang.</p>
-          <p><strong>Eits, tapi tenang saja!</strong></p>
-          <p>Para ahli sejarah memiliki beberapa catatan perkembangannya, loh. Mau tau? Yuk kita lihat sama-sama!</p>
+          <h5><strong>Eits, tapi tenang saja!</strong></h5>
+          <h5>Para ahli sejarah memiliki beberapa catatan perkembangannya, loh. Mau tau? Yuk kita lihat sama-sama!</h5>
           
           <p><strong>Aturan perkalian lebih diutamakan daripada penjumlahan.</strong>
             Telah muncul secara alami. Hal ini terjadi karena notasi aljabar telah dikembangkan
@@ -282,7 +291,7 @@ and is wrapped around the whole page content, except for the footer in this exam
             mencoba link di bawah ini untuk menguji keahlian teman-teman.
             Link-link tersebut juga akan sangat berguna bagi teman-teman yang masih belum
             begitu paham akan materi ini agar lebih paham.</p>
-          <p><strong>Yuk, check it out!</strong></p>
+          <h5><strong>Yuk, check it out!</strong></h5>
           
           <img src="https://pbs.twimg.com/media/FiYIQLGUAAAKJKx?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16" id="faktorprima">
           
@@ -301,8 +310,8 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p style="color:red"><strong>20 = 2 x 2 x 5</strong></p>
           <p>maka faktorisasi prima dari 20 adalah <span style="color:red">2²x 5</span></p>
 
-          <P>Faktor prima dan faktorisasi prima dapat dicari menggunakan dua cara, 
-            yaitu menggunakan kotak perkalian dan pohon faktor</p>
+          <h5>Faktor prima dan faktorisasi prima dapat dicari menggunakan dua cara, 
+            yaitu menggunakan kotak perkalian dan pohon faktor</h5>
 
           <img src="https://pbs.twimg.com/media/FiYIScZUYAAHJNo?format=jpg&name=small" alt="Men in Hats" style="width:100%" class="w3-padding-16" id="fpb">
           <h5>C. Faktor Persekutuan Terbesar (FPB)</h5>
